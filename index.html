@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="froms-container">
-            <div class="sognin-signup">
+            <div class="signin-signup">
                 <form action="" class="sign-in-form">
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">
@@ -22,27 +22,80 @@
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="" placeholder="Password" name="" value="">
+                        <input type="password" placeholder="Password" name="" value="">
                     </div>
                     <input type="submit" name="" value="Login" class="btn solid">
                     <p class="social-text">Or Sign in with social platforms</p>
                     <div class="social-media">
-                        <a href="#" class="socail-icon">
+                        <a href="#" class="social-icon">
                             <i class="fab fa-facebook f"></i>
                         </a>
-                        <a href="#" class="socail-icon">
+                        <a href="#" class="social-icon">
                             <i class="fab fa-brands fa-google"></i>
                         </a>
-                        <a href="#" class="socail-icon">
+                        <a href="#" class="social-icon">
                             <i class="fab fa-brands fa-github"></i>
                         </a>
-                        <a href="#" class="socail-icon">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </form>
+ 
+                <!-- second form -->
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Sign Up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="" placeholder="Username" value="">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="email" name="" placeholder="Email" value="">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" name="" value="">
+                    </div>
+                    <input type="submit" name="" value="Sign up" class="btn solid">
+                    <p class="social-text">Or Sign Up with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-brands fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
                             <i class="fab fa-brands fa-linkedin"></i>
                         </a>
                     </div>
                 </form>
             </div>
         </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New Here ?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis aliquam dui, eu iaculis augue ornare non.</p>
+                    <button class="btn tranparent" id="sign-up-btn">Sign up</button>
+                    <img src="img/login.svg" class="image" alt="sign up">
+                </div>
+            </div>
+   
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>one of us ?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis aliquam dui, eu iaculis augue ornare non.</p>
+                    <button class="btn tranparent" id="sign-in-btn">Sign in</button>
+                    <img src="img/register.svg" class="image" alt="sign in">
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
