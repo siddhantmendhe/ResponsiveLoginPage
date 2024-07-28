@@ -260,36 +260,83 @@ form{
 
 @media (max-width:870px){
   .container{
-    min-height: 800px;
+   
     height: 100svh;
   }
 
   .container:before {
-    width: 400svw;
-    height: 500svw;
+    width: 300svw;
+    height: 200svw;
     left: 20%;
     bottom: 60%;
     transform: translateX(-50%);
-   
     right: initial;
     top: initial;
+    transition: 2s ease-in-out;
   }
 
   .signin-signup{
     width: 100%;
     left: 50%;
-    top:95%;
-    transform: translate(-50%, 100%);
+    top:0%;
+    transform: translate(-50%, 90%);
+    transition: 1s 0.8s ease-in-out;
+ 
+    
 
   }
+ 
+
+  .signin-signup h2{
+    font-size: 1.2rem;
+    
+
+  }
+  form .input-field{
+    max-width: 180px;
+    width: 100%;
+    height: 35px;
+    font-size: 0.3rem;
+    text-align: center;
+
+  }
+  .social-text{
+    font-size: 1rem;
+  }
+
+  .social-icon{
+    height: 30px;
+    width: 30px;
+  }
+ 
   .panel{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 2.5rem 8%;
+  pointer-events: all;
+
+  }
+  .panel .content{
+    padding-right: 15%;
+    transition: 0.9s 0.8s ease-in-out;
+
+  }
+  .panel h3{
+    font-size: 1.2rem;
+  }
+  .panel p{
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+  }
+  .btn.tranparent, .btn.solid{
+    width: 110px;
+    height: 35px;
+    font-size: 0.7rem;
   }
   .image{
     width: 200px;
+    transition: 0.9s 0.6s ease-in-out;
   }
   .panels-container{
 
@@ -301,14 +348,31 @@ form{
     grid-row: 3/4;
   }
   .left-panel{
-    
+  
     grid-row: 1/2;
   }
+
   .right-panel .content, .right-panel .image{
   transform: translateY(300px);
-  background-color: green;
+
+  
 
   }
-  
+
+  .container.sign-up-mode:before{
+    transform: translate(-50%, 100%);
+    bottom: 40%;
+    right: initial;
+  }
+  .container.sign-up-mode .left-panel .image,
+  .container.sign-up-mode .left-panel .content{
+  transform: translateY(-300px);}
+
+  .container.sign-up-mode  .signin-signup{
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
 
 }
